@@ -48,8 +48,11 @@ public class Application {
         int sub = calculator.sub(test1, test2);
         System.out.println("sub = " + sub);
 
-        int mul = calculator.mul(test1, test2);
-        System.out.println("mul = " + mul);
+        int multiple = calculator.multiple(test1, test2);
+        System.out.println("multiple = " + multiple);
+
+        int divide = calculator.divide(test1, test2);
+        System.out.println("divide = " + divide);
     }
 
     static class Calculator{
@@ -61,8 +64,15 @@ public class Application {
             return num1 - num2;
         }
 
-        public int mul(int num1, int num2) {
+        public int multiple(int num1, int num2) {
             return num1 * num2;
+        }
+
+        public int divide(int num1, int num2) {
+            if (num2 == 0) {
+                throw new ArithmeticException("divide by zero");
+            }
+            return num1 / num2;
         }
 
         //TODO impl divide
