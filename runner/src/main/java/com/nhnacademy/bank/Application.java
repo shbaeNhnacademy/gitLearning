@@ -55,6 +55,9 @@ public class Application {
 
         System.out.println("divide 2 아니고 1 = " + divide);
 
+        int mul_div = calculator.multiple(add, sub);
+        System.out.println("mul_div = " + mul_div);
+
     }
 
     static class Calculator{
