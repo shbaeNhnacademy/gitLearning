@@ -52,7 +52,7 @@ public class Application {
         System.out.println("multiple = " + multiple);
 
         int divide = calculator.divide(test1, test2);
-        System.out.println("divide = " + divide);
+        System.out.println("divide2 = " + divide);
     }
 
     static class Calculator{
