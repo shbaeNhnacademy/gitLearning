@@ -47,6 +47,9 @@ public class Application {
 
         int sub = calculator.sub(test1, test2);
         System.out.println("sub = " + sub);
+
+        int mul = calculator.mul(test1, test2);
+        System.out.println("mul = " + mul);
     }
 
     static class Calculator{
@@ -58,6 +61,10 @@ public class Application {
             return num1 - num2;
         }
 
-        //TODO impl multiple, divide
+        public int mul(int num1, int num2) {
+            return num1 * num2;
+        }
+
+        //TODO impl divide
     }
 }
