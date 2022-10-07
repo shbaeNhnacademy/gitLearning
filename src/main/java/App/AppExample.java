@@ -10,5 +10,7 @@ public class AppExample {
 
         int sum = test1 + test2;
         System.out.println("sum = " + sum);
+        System.out.println("sum = " + sum);
+        System.out.println("sum = " + sum);
     }
 }
