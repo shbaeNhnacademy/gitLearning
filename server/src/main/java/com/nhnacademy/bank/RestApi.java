@@ -11,6 +11,7 @@ public class RestApi {
         Account account = new Account();
 
         if(action == Action.DEPOSIT){
+	    System.out.println("test");
             return account.deposit(new Money(amount, Currency.getInstance(Locale.US)));
         }else{
             return account.withdraw(new Money(amount, Currency.getInstance(Locale.US)));
