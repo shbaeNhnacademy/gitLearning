@@ -44,6 +44,9 @@ public class Application {
 
         int add = calculator.add(test1, test2);
         System.out.println("add = " + add);
+
+        int sub = calculator.sub(test1, test2);
+        System.out.println("sub = " + sub);
     }
 
     static class Calculator{
@@ -51,6 +54,10 @@ public class Application {
             return num1 + num2;
         }
 
-        //TODO impl sub, multiple, divide
+        public int sub(int num1, int num2) {
+            return num1 - num2;
+        }
+
+        //TODO impl multiple, divide
     }
 }
