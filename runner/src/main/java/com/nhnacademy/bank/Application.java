@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 /**
  * Application class, entry point.
  */
@@ -39,8 +40,13 @@ public class Application {
         System.out.println("json = " + json);
 
         Calculator calculator = new Calculator();
-        int test1 = 1;
-        int test2 = 2;
+
+        Scanner scanner = new Scanner(System.in); 
+        System.out.println("첫번째 인자 입력: ");
+        int test1 = scanner.nextInt();
+
+        System.out.println("두번째 인자 입력: ");
+        int test2 = scanner.nextInt();
 
         int add = calculator.add(test1, test2);
         System.out.println("add = " + add);
@@ -54,6 +60,8 @@ public class Application {
         int divide = calculator.divide(test1, test2);
 
         System.out.println("divide 2 아니고 1 = " + divide);
+        
+        scanner.close();
 
         int mul_div = calculator.multiple(add, sub);
         System.out.println("mul_div = " + mul_div);
@@ -66,6 +74,7 @@ public class Application {
         }
 
         public int sub(int num1, int num2) {
+            System.out.println(num1 - num2);
             return num1 - num2;
         }
 
