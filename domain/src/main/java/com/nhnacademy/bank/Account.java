@@ -6,7 +6,7 @@ package com.nhnacademy.bank;
 public class Account {
     public boolean deposit(Money money) {
         System.out.println("money = " + money);
-
+        System.out.println("hello");
         return true;
     }
 
